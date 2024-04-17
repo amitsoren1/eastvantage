@@ -1,8 +1,5 @@
 import asyncio
-from contextlib import contextmanager
-import json
 import unittest
-from unittest import mock
 from fastapi.testclient import TestClient
 from tests.database_for_test import create_all, drop_all, app
 

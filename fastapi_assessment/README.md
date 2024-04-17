@@ -45,7 +45,7 @@ uvicorn main:app
 git clone https://github.com/amitsoren1/eastvantage.git
 cd eastvantage/fastapi
 pip install -r requirements.txt
-pip install pytest httpx
+pip install httpx
 ```
 
 - **for windows**
@@ -59,5 +59,6 @@ pip install pytest httpx
     ```
 
 ```
-pytest .
+python tests/test_books.py
+python tests/test_reviews.py
 ```

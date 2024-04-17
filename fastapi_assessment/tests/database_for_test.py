@@ -1,6 +1,5 @@
 from typing import AsyncGenerator
 from sqlalchemy.ext.asyncio import create_async_engine, async_sessionmaker, AsyncSession
-from sqlalchemy import create_engine
 from config import TEST_DB_URL
 from database import get_db
 from models import Base
