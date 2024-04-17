@@ -7,7 +7,7 @@ from models import Base
 from main import get_db, app
 
 
-engine = create_async_engine(TEST_DB_URL, pool_pre_ping=True, echo=True)
+engine = create_async_engine(TEST_DB_URL, pool_pre_ping=True, echo=False)
 
 async_session = async_sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
